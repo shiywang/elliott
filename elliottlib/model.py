@@ -1,5 +1,5 @@
 
-class ModelException(StandardError):
+class ModelException(Exception):
 
     def __init__(self, msg, result=None, **kwargs):
         super(self.__class__, self).__init__(msg)
